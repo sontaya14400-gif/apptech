@@ -67,7 +67,7 @@ function createCompanyCard(company) {
 }
 
 function loadCompanies() {
-    fetch("companies.JSON")
+    fetch("companies.json")
         .then((response) => response.json())
         .then((data) => {
             data.forEach((company) => {
@@ -80,5 +80,6 @@ function loadCompanies() {
 
 closeButton.addEventListener("click", closeOverlay);
 overlay.addEventListener("click", handleOverlayClick);
+
 
 loadCompanies();
